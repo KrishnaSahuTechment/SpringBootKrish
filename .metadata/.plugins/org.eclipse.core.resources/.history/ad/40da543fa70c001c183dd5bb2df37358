@@ -1,0 +1,7 @@
+package com.techment.service;
+
+public interface IEmployeeServiceImpl extends IEmployeeService {
+
+	
+	
+}

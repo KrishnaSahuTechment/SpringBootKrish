@@ -1,0 +1,27 @@
+package com.techment.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.techment.entity.Course;
+import com.techment.service.CourseService;
+
+@RestController
+public class CourseController {
+
+	@Autowired
+	private CourseService courseService;
+	
+	
+	@GetMapping("/courses")
+	public List<Course> list()
+	{
+		
+		return courseService.listAll();
+	}
+	
+	
+}

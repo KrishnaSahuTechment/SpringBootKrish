@@ -1,0 +1,9 @@
+package com.techment.repositry;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class EmployeeRepositry extends JpaR  {
+
+	
+}

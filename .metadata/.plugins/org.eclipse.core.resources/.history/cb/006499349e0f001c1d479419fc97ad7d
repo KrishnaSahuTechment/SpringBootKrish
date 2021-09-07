@@ -1,0 +1,46 @@
+package com.techment.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.techment.dao.ICustomerDao;
+import com.techment.dto.CustomerDto;
+import com.techment.entity.Customer;
+
+
+@Service
+public class customerServiceIml implements ICustomerService {
+
+	@Autowired
+	ICustomerDao Dao; 
+	
+	CustomerDto customerDto;
+	
+	@Override
+	public String addCustomer(CustomerDto customerDto) {
+		// TODO Auto-generated method stub
+		
+		Customer customer = new Customer();
+		customer.setName(customerDto.getName());
+		customer.setAddress(customerDto.getAddress());
+		customer.setAge(customerDto.getAge());
+		customer.setEmail(customerDto.getEmail());
+		customer.setMobile(customerDto.getMobile());
+		
+		Dao.save(customer);
+		
+		
+		return "Customer added";
+	}
+
+	
+
+	@Override
+	public List<CustomerDto> viewAllCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

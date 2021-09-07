@@ -1,0 +1,26 @@
+package com.techment.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.techment.entity.Employee;
+
+public class IEmployeeServiceImpl implements IEmployeeService {
+
+	@Autowired
+	IEmployeeDao iemployeeDao;
+	
+	@Override
+	public String addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return "employee Added";
+	}
+
+	@Override
+	public List<Employee> viewAllEmployee() {
+		// TODO Auto-generated method stub
+		return employeeDao.findAll();
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.techment;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+
+	
+	public Student GetStudent() {
+		
+		return Student("Krishna","Sahu");
+	}
+}

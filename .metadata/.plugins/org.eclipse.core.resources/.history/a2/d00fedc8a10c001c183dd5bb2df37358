@@ -1,0 +1,70 @@
+package com.techment;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.techment.dao.IAuthorDao;
+import com.techment.dao.IBookDao;
+import com.techment.entity.Author;
+import com.techment.entity.Book;
+
+@SpringBootApplication
+public class AssignmentHibernateApplication implements CommandLineRunner {
+
+	@Autowired
+	IAuthorDao iAutherDao;
+	
+	@Autowired
+	IBookDao iBookDao;
+	
+	
+	public static void main(String[] args)  {
+		SpringApplication.run(AssignmentHibernateApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		
+		Author auth1 = new Author ("E balaguruswami");
+		Author auth2 = new Author ("Krishna");
+		Author auth3 = new Author ("Anmol");
+		Author auth4 = new Author ("Devesh");
+		Author auth5 = new Author ("Prateek");
+		Author auth6 = new Author ("Durgesh");
+		
+		iAutherDao.save(auth1);
+		
+		
+		
+		
+		iBookDao.save(new Book("java",500,auth1));
+		iBookDao.save(new Book("C",500,auth2));
+		iBookDao.save(new Book("C++",700,auth3));
+		iBookDao.save(new Book("HTML",800,auth4));
+		iBookDao.save(new Book("JS",900,auth5));
+		iBookDao.save(new Book("JSP",900,auth6));
+		
+		System.out.println("inserted");
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+//		Auther auther1 = new Auther("E", "Balaguru", "Swami", "9522222", books);
+		
+		
+	}
+
+}

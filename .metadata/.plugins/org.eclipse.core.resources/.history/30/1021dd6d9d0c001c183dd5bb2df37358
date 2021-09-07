@@ -1,0 +1,37 @@
+package com.techment;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.techment.dao.IAutherDao;
+import com.techment.dao.IBookDao;
+import com.techment.entity.Auther;
+
+@SpringBootApplication
+public class AssignmentHibernateApplication implements CommandLineRunner {
+
+	@Autowired
+	IAutherDao iAutherDao;
+	
+	@Autowired
+	IBookDao iBookDao;
+	
+	
+	public static void main(String[] args)  {
+		SpringApplication.run(AssignmentHibernateApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		
+		
+//		Auther auther1 = new Auther("E", "Balaguru", "Swami", "9522222", books);
+		
+		
+	}
+
+}

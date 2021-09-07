@@ -1,0 +1,22 @@
+package com.techment;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+
+	@Autowired
+	Student student;
+	
+	@GetMapping("/student")
+	public Student GetStudent() {
+	
+		student.setFirstName("krishna");
+		student.setLastName("Sahu");
+		return student;
+	}
+
+	
+}

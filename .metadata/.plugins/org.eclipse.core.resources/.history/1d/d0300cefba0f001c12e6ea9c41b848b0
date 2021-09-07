@@ -1,0 +1,5 @@
+package com.techment.exception;
+
+public class IDNotFoundException extends RuntimeException{
+
+}

@@ -1,0 +1,11 @@
+package com.techment.entity;
+
+public class Employee {
+
+	private int empId;
+	private String empName;
+	private double salary;
+	private String dept;
+	
+	
+}

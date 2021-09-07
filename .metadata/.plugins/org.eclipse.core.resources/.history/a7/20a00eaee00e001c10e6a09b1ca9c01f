@@ -1,0 +1,9 @@
+package com.techment.service;
+
+import com.techment.model.Employee;
+
+public interface EmployeeService {
+
+	Employee saveEmployee(Employee employee);
+	
+}

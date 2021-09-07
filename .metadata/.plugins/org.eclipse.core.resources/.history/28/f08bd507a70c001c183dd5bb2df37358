@@ -1,0 +1,8 @@
+package com.techment.service;
+
+public interface IEmployeeService {
+
+	String addEmployee(Employee employee);
+	
+	
+}

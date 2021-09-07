@@ -1,0 +1,17 @@
+package com.techment.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.techment.entity.Auther;
+
+@Repository
+public interface IAutherDao extends JpaRepository<Auther, Integer> {
+	
+	List<Auther> findByName(String fisrtName, String middleName,String lastName);
+	
+	
+
+}

@@ -1,0 +1,14 @@
+package com.techment.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/employeeController")
+public class EmployeeController {
+
+	public String display()
+	{
+		return "this is my first demo";
+	}
+	
+	
+}
