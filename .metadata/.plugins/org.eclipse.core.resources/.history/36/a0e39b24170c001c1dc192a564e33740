@@ -1,8 +1,0 @@
-package com.techment.entity;
-
-public class Employee {
-
-	private int empId;
-	private String empName;
-	
-}

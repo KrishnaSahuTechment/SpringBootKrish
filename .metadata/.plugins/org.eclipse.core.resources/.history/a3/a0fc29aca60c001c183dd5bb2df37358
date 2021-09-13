@@ -1,5 +1,0 @@
-package com.techment.dao;
-
-public interface IEmployee {
-
-}

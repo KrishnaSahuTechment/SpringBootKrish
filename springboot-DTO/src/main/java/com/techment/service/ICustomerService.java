@@ -9,10 +9,12 @@ public interface ICustomerService {
 
 	String addCustomer(CustomerDto customerDto);
 	
-	List<CustomerDto> viewAllCustomer();
-
-	Customer saveCustomer(Customer customer);
-	
+	List<CustomerDto> viewAllCustomer();	
 
 	 CustomerDto viewCustomerById(int id);
+
+	String updateCustomerById(Customer  customer,int id);
+
+	String deleteCustomerById(int id);
+
 }

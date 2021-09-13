@@ -5,16 +5,29 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 
 public class CustomerDto {
 
 	
 	private int id;
+	
+	@Size(min = 3,message = "name should minimum 3 characters")
 	private String name;
+	
+	
 	private int age;
+	
+	@NotEmpty(message = "Address should not be empty")
 	private String address;
+	
+//	@Email(message="give in proper email formate")
 	private String email;
+	
+	@Size(min = 10,max=10,message = "It should be 10 digit")
 	private String mobile;
 	
 	public CustomerDto() {

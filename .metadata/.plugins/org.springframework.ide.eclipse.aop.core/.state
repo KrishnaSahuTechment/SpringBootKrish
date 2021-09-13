@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SpringBootJPAPerson"/>
+<aop-project name="JavaTokenWithDatabase"/>
 <aop-project name="springbootcourse"/>
 <aop-project name="AssignmentHibernate"/>
 <aop-project name="SpringBootJPA"/>
-<aop-project name="springboot-first-app"/>
+<aop-project name="JwtToken"/>
 <aop-project name="springboot-backend"/>
+<aop-project name="springboot-first-app"/>
+<aop-project name="spring-security-jwt-example"/>
 <aop-project name="springboot-DTO"/>
 <aop-project name="RestDemo1"/>
 </aop-reference-model>
